@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>jiaoyu</title>
+<link href="css/reset.css" type="text/css" rel="stylesheet">
+<link href="css/swiper-bundle.min.css" type="text/css" rel="stylesheet">
+<!-- CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-olOxEXxDwd20BlATUibkEnjPN3sVq2YWmYOnsMYutq7X8YcUdD6y/1I+f+ZOq/47" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+<link href="css/1.css" type="text/css" rel="stylesheet">
+
+<style>
+	#top{color: white;font-size: 20px;margin-top: 29px;width: 100%;height: 25px;}
+	#mobile-menu {position:fixed;top:0;left:0;width:220px;height:100%;background-color:#373737;z-index:9999;}
+    a:hover ,a:focus{text-decoration:none}
+    .mobile-nav ul li a {color:gray;display:block;padding:1em 5%;    border-top:1px solid #4f4f4f;border-bottom:1px solid #292929;transition:all 0.2s ease-out;cursor:pointer;}
+	#mobile-menu{position:fixed;top:0;left:0;width:220px;height:100%;background-color:#373737;z-index:9999;transition:all 0.3s ease-in;}
+    .mobile-nav ul li a:hover {background-color: #23A1F6;color: #ffffff;}
+    .show-nav {transform:translateX(0px);}
+    .hide-nav {transform:translateX(-220px);} /*侧滑关键*/
+    .mobile-nav-taggle {height:15px;width:20px;color:#ffffff;display:inline-block;text-align:center;cursor:pointer;}
+    .nav-btn {line-height:25px;float: right;margin-right: 15px;}
+	#div1{width: 100%;height: 100px;margin-top: 6px;border-bottom: 3px solid #EFEFEF;}
+	#div1 p{color: rgba(107,107,107,1.00);font-size: 14px;margin-top: 13px;text-align: center;}
+	.div1-1-1{height: 100px;display: inline-block;margin-left: 30px;}
+</style>
+<!-- jQuery and JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-NU/T4JKmgovMiPaK2GP9Y+TVBQxiaiYFJB6igFtfExinKlzVruIK6XtKqxCGXwCG" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<div id="top">
+		<div style="float: left;margin-left: 12px;">首页</div>
+		 <!--手机导航栏-->
+    	<div id="mobile-menu" class="mobile-nav visible-xs visible-sm hide-nav">
+			<ul>
+				<li><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+			</ul>
+    	</div>
+		<!--手机导航栏侧滑-->
+		<div class="nav-btn visible-xs visible-sm">
+			<a href="#" class="mobile-nav-taggle" id="mobile-nav-taggle">
+				<span class="bi bi-text-right" ></span>
+			</a>
+		</div>
+	</div>
+	<div style="width: 100%;height: 178px;">
+		<div style="margin: 0 auto;width: 351px;height: 199px;">
+			<img src="images/轮播图.png" width="100%" alt="">
+		</div>
+	</div>
+	<div id="div1">
+		<div style="width: 350px;height: 100px;margin:  0 auto;">
+			<div class="div1-1-1">
+				<img src="images/首页2.png" alt="" width="100%">
+				<p>套餐</p>
+			</div>
+			<div class="div1-1-1">
+				<img src="images/首页3.png" alt="" width="100%">
+				<p>课表</p>
+			</div>
+			<div class="div1-1-1">
+				<img src="images/首页4.png" alt="" width="100%">
+				<p>VIP</p>
+			</div>
+			<div class="div1-1-1">
+				<img src="images/首页5.png" alt="" width="100%">
+				<p>锦囊</p>
+			</div>
+		</div>
+	</div>
+	<div style="width: 100%;height: 55px;display: block;">
+		<div style="width: 350px;height: 48px;margin: 0 auto;">
+			<div style="width: 5px;height: 18px;background-color: aqua;display: inline-block;margin-top: 15px;">&nbsp;</div>
+			<div style="font-size: 18px;font-weight: 900;display: inline-block;margin-left: 5px;">直播列表</div>
+			<div style="color: rgba(157,157,157,1.00);float: right;"><span>查看全部</span><span>&gt;</span></div>
+		</div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+<script>
+	$("#mobile-nav-taggle").click(function () {
+		var mobileMenu = $("#mobile-menu");
+		if (mobileMenu.hasClass("show-nav")) {
+		setTimeout(function () {
+		mobileMenu.addClass("hide-nav").removeClass("show-nav");
+		}, 100)
+		}
+	else {
+		setTimeout(function (){
+		mobileMenu.addClass("show-nav").removeClass("hide-nav");
+		}, 100)
+		}
+	});
+</script>
+</body>
+</html>
