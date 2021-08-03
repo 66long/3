@@ -1,0 +1,166 @@
+<!doctype html>
+<html><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>jiaoyu</title>
+<link href="css/reset.css" type="text/css" rel="stylesheet">
+<!-- CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-olOxEXxDwd20BlATUibkEnjPN3sVq2YWmYOnsMYutq7X8YcUdD6y/1I+f+ZOq/47" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+<link href="css/1.css" type="text/css" rel="stylesheet">
+
+<style>
+	#top{color: white;font-size: 20px;margin-top: 29px;width: 100%;height: 25px;}
+	#mobile-menu {position:fixed;top:0;left:0;width:220px;height:100%;background-color:#373737;z-index:9999;}
+    a:hover ,a:focus{text-decoration:none}
+    .mobile-nav ul li a {color:gray;display:block;padding:1em 5%;    border-top:1px solid #4f4f4f;border-bottom:1px solid #292929;transition:all 0.2s ease-out;cursor:pointer;}
+	#mobile-menu{position:fixed;top:0;left:0;width:220px;height:100%;background-color:#373737;z-index:9999;transition:all 0.3s ease-in;}
+    .mobile-nav ul li a:hover {background-color: #23A1F6;color: #FFFFFF;}
+    .show-nav {transform:translateX(0px);}
+    .hide-nav {transform:translateX(-220px);} /*侧滑关键*/
+    .mobile-nav-taggle {height:15px;width:20px;color:#FFFFFF;display:inline-block;text-align:center;cursor:pointer;}
+    .nav-btn {line-height:25px;float: right;margin-right: 15px;}
+	#div1{width: 100%;height: 90px;margin-top: 19px;}
+	#div1 p{color: rgba(107,107,107,1.00);font-size: 14px;margin-top: 4px;text-align: center;}
+	.div1-1-1{width: 19%;height: 90px;display: inline-block;margin-left: 15px;text-align: center;margin-top: 10px;}
+	#div2{width: 100%;height: 45px;margin-top: 17px;}
+	#div2-2{margin: 0 auto;width: 303px;height: 42px;background-color: #393484;border-radius: 10px;box-shadow:2px 2px 5px 1px #393484;}
+	#div2-2 p{text-align: center;font-size: 17px;color: white;line-height: 42px;}
+	#div3{width: 100%;height: 20px;}
+	#div3 p{display: inline;margin-left: 14px;font-size: 16px;font-weight: 500;}
+	#div3 a{color: rgba(157,157,157,1.00);display: inline;margin-left: 180px;}
+	#div3-3{display: inline-block;width: 30px;height: 18px;background-color: #B298FB;color: white;border-radius: 2px;text-align: center;}
+	#div4{width: 100%;height: 100px;margin-top: 28px;}
+	#div4 div{height: 30px;margin-left: 14px;font-size: 16px;}
+</style>	
+
+<!-- jQuery and JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-NU/T4JKmgovMiPaK2GP9Y+TVBQxiaiYFJB6igFtfExinKlzVruIK6XtKqxCGXwCG" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<div id="top">
+		<div style="float: left;margin-left: 12px;">学习</div>
+		 <!--手机导航栏-->
+    	<div id="mobile-menu" class="mobile-nav visible-xs visible-sm hide-nav">
+			<ul>
+				<li><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+			</ul>
+    	</div>
+		<!--手机导航栏侧滑-->
+		<div class="nav-btn visible-xs visible-sm">
+			<a href="#" class="mobile-nav-taggle" id="mobile-nav-taggle">
+				<span class="bi bi-text-right" ></span>
+			</a>
+		</div>
+	</div>
+	<div id="div1">
+		<div style="width: 350px;height: 90px;margin:  0 auto;background-color: white;">
+			<div class="div1-1-1">
+				<a href="#"><img src="images/学习1.png" alt="" width="75%">
+				<p>学习辅导</p></a>
+			</div>
+			<div class="div1-1-1">
+				<a href="#"><img src="images/学习2.png" alt="" width="75%">
+				<p>疑问问题</p></a>
+			</div>
+			<div class="div1-1-1">
+				<a href="#"><img src="images/学习3.png" alt="" width="75%">
+				<p>高中辅导</p></a>
+			</div>
+			<div class="div1-1-1">
+				<a href="#"><img src="images/学习4.png" alt="" width="75%">
+				<p>更多课程</p></a>
+			</div>
+		</div>
+	</div>
+	<div id="div2">
+		<div id="div2-2">
+			<p>新用户注册赠送100元大礼包</p>
+		</div>
+	</div>
+	<div style="width: 100%;height: 70px;margin-top: 24px;">
+		<div style="width: 345px;height: 69px;margin: 0 auto;background-color: white;border-radius: 5px;box-shadow:2px 2px 5px 1px darkgrey;line-height: 69px;">
+			<p style="float: left;font-size: 18px;">【招募】</p>
+			<p style="font-size: 16px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap">【招募】赢在千图创始人特训营30个人。</p>
+		</div>
+	</div>
+	<div style="margin-top: 21px;width: 100%;height: 30px;">
+		<p style="display: inline;margin-left: 14px;font-size: 20px;font-weight: 700;">每日轻听</p>
+		<p style="font-size: 14px;display: inline;color: rgba(160,160,160,1.00);">422条</p>
+		<div style="width: 105px;height: 30px;float: right;margin-right: 14px;"><a><img src="images/学习5.png" alt=""></a></div>
+	</div>
+	<div id="div3">
+		<div style="margin-top: 25px;">
+			<p>04月13日</p>
+			<div id="div3-3">上新</div>
+			<a href="#">查看往期 &gt;</a>
+		</div>
+	</div>
+	<div id="div4">
+		<div><img src="images/学习6.png"  alt=""> 互联网金融：VC如何看待互联网金融行业？</div>
+		<div><img src="images/学习6.png" alt=""> 用户反馈丨获取用户反馈的四大渠道</div>
+		<div><img src="images/学习6.png" alt=""> 用户营销：优秀的销售如何留住客户？</div>
+	</div>
+	<div style="font-size: 20px;font-weight: 700;margin-left: 14px;">上新推荐</div>
+	<div style="width: 100%;height: 70px;margin-top: 24px;">
+		<div style="width: 345px;height: 69px;margin: 0 auto;background-color: white;border-radius: 5px;box-shadow:2px 2px 5px 1px darkgrey;text-align: center;">
+			<div style="height: 69px;width: 40px;float: left;margin-left: 14px;"><div style="width: 40px;height: 40px;background-color: #8A58B0;border-radius: 50px;margin-top: 15px;"></div></div>
+			<div style="float: left;line-height: 69px;font-weight: 900;margin-left: 10px;">千图成长社</div>
+			<p style="color: rgba(155,155,155,1.00);margin-right: 14px;float: right;line-height: 69px;">每周三更新</p>
+		</div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<nav class="htmlnav">
+		<ul>
+			<li><a href="index.html"><img src="images/导航11.png" alt=""><p>首页</p></a></li>
+			<li><a href="#"><img src="images/导航22.png" alt=""><p style="color: #7AD5FF">学习</p></a></li>
+			<li style="margin-top: 19px;"><a href="faxian.html"><img src="images/导航3.png" alt=""><p>发现</p></a></li>
+			<li><a href="kecheng.html"><img src="images/导航41.png" alt=""><p>课程</p></a></li>
+			<li><a href="wode.html"><img src="images/导航51.png" alt=""><p>我的</p></a></li>
+		</ul>
+	</nav>	
+	
+<script>
+	$("#mobile-nav-taggle").click(function () {
+		var mobileMenu = $("#mobile-menu");
+		if (mobileMenu.hasClass("show-nav")) {
+		setTimeout(function () {
+		mobileMenu.addClass("hide-nav").removeClass("show-nav");
+		}, 100)
+		}
+	else {
+		setTimeout(function (){
+		mobileMenu.addClass("show-nav").removeClass("hide-nav");
+		}, 100)
+		}
+	});
+</script>
+</body>
+</html>
